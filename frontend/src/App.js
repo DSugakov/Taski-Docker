@@ -28,7 +28,7 @@ const App = () => {
     refreshList();
   }, []);
 
-  const handleSubmit = (item) => {
+  const handleSubmit = (item) => { 
     const request = item.id
       ? axios.put(`/api/tasks/${item.id}/`, item)
       : axios.post("/api/tasks/", item);
